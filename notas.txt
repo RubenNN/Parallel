@@ -1,0 +1,14 @@
+Parallel --> Constructor, recibe los datos con los que queremos operar
+Spawn --> Recibe una function con los datos que vamos a usar
+El bucle con javascript normal nos bloquea la página porque no estamos usando webworkers (hilos) , ventaja para parallel
+
+La función map lanzará un worker por cada uno de los elementos del array que le pasamos al Parallel
+
+Spawn --> Serie: 51s Paralelo: 18s
+Map   --> Paralelo: 6s Serie: 7s
+
+
+Utilizamos underscore para los rangos
+
+Reduce --> Lo utilizamos para aplicar una operación a una serie de numeros
+Require --> Compartir estados entre workers
